@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  
-      <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
-      
-      <title>
+<!doctype html>
+<html>
+<head>
+<meta charset="<?php bloginfo('charset'); ?>">
+
+
+	<title>
 		   <?php
 		      if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
@@ -28,52 +24,52 @@
 		         echo ' - page '. $paged; }
 		   ?>
 	</title>
-       
+	
+	
+	<meta name="description" content="<?php bloginfo('description'); ?>">
 
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!—Viewport responsive  -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+	
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK -->
+    <!—Google fonts  -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+<!-- CSS:  -->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-      <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="style.css" /> 
-      <link rel="stylesheet" href="responsive.css" />
-<?php wp_head(); ?> 
-  </head>
-  <body>
-       <header class="container-fluid herobg">
-      <nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ <?php wp_head(); ?> <!—very important that this is added-->
+
+    </head>
+
+<body>
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
-        <a class="navbar-brand" href="#"><span class="josh">JOSH  </span>
-            
-            <span class="orange">WHITKIN</span>
-        </a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">HOME</a></li>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">PUBLICATIONS</a></li>
-        <li><a href="#">CV</a></li>
-          <li><a href="#">CONTACT</a></li>
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-  
-      <div class="container">
-       <h1>Game Designs For the future</h1>
-       </div>
-      </header>  
+                <a class="navbar-brand" href="#">JOSH <span class="orange">WHITKIN</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">PUBLICATIONS</a></li>
+                    <li><a href="#">CV</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <header class="container-fluid  herobg">
+        <div class="container">
+            <h1> Games Design For the future</h1>
+        </div>
+    </header>
