@@ -43,12 +43,32 @@ a:hover {
 .navbar-toggle{
     background-color: white;
 }
+.herobg {
+    background: url("images/header-bg.jpg") no-repeat center center;
+    background-size: cover;/*make the background image cover the whole div proportionally*/
+/* do not pixel heights on divs- this is not responsive – instead padding on the children as a  percentage*/
+    }
+
 
 .herobg{
     background: url(images/Header.jpg);
     background-size: cover; 
 }
-
+.herobg h1{
+   float:right; /* float the text to the right*/
+    color:#ffff;/* make the text white*/
+    width:341px;/* give the H1 a width so that we wrap the text as per the design comp*/
+    font-size:7.125em; /* 114px font size in photoshop divided by 16px= 7.125*/
+    letter-spacing: -10px;/* fix the letter-spacing*/
+    font-weight: 800;/* make the text bold*/
+    line-height:75%;/* decrease the line height*/
+    margin-top:140px;/* the words are 140px away from the navbar in photoshop*/
+    text-align:right;
+padding-bottom: 10%; /* use a percentage so that we have a variable padding at the bottom – the children within the div should control the height of divs*/
+}
+.herobg h1{
+    font-family: 'Raleway', sans-serif;
+}
 .herobg h1 {
     font-family: 'Raleway', sans-serif;
     float:right;
