@@ -46,6 +46,7 @@
     </head>
 
 <body>
+    <header class="container-fluid herobg"> 
     <nav class="navbar ">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -68,8 +69,7 @@
             </div>
         </div>
     </nav>
-    <header class="container-fluid  herobg">
         <div class="container">
-            <h1> Games Design For the future</h1>
+            <h1>Games Design For the future</h1>
         </div>
     </header>
