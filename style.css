@@ -44,15 +44,15 @@ a:hover {
     background-color: white;
 }
 .herobg {
-    background: url("images/herobg.jpg") no-repeat center center;
+    background: url("images/header-bg.jpg") no-repeat center center;
     background-size: cover;/*make the background image cover the whole div proportionally*/
 /* do not pixel heights on divs- this is not responsive – instead padding on the children as a  percentage*/
     }
 
 
-.herobg{
+/*.herobg{
     background: url(images/herobg.jpg);
-    background-size: cover; 
+    background-size: cover;  */
 }
 .herobg h1{
    float:right; /* float the text to the right*/
