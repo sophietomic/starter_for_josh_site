@@ -49,6 +49,13 @@ a:hover {
 /* do not pixel heights on divs- this is not responsive – instead padding on the children as a  percentage*/
     }
 
+.small_herobg {
+    width:100%;
+    background: url("images/small_header-bg.jpg") no-repeat center center;
+    background-size: cover;
+    height:40vh; 
+    }
+ 
 
 /*.herobg{
     background: url(images/herobg.jpg);
